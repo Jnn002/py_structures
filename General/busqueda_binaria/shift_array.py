@@ -11,13 +11,12 @@ def find(A):
 
         # Si el elemento medio es menor que el elemento anterior, entonces es el mínimo
         if A[mid] < A[mid - 1]:
-            return f'El índice del elemento más pequeño es: {mid} cuyo valor es {A[mid]} '
+            return f'El índice del elemento más pequeño es: {mid} cuyo valor es {A[mid]}'
             
 
         # Si el elemento medio es menor que el último elemento, ajusta el límite superior
         if A[mid] < A[high]:
             high = mid - 1
-
         # Si el elemento medio es mayor que el último elemento, ajusta el límite inferior
         else:
             low = mid + 1
