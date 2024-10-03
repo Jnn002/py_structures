@@ -43,10 +43,4 @@ def find_uppercase_recursive(input_str, idx=0):
 
 print(find_uppercase_recursive(palabra))
 
-def string_len(input_str):
-    contador = 0
-    if input_str == '':
-        return 0
-    return 1 + string_len(input_str[1:])
-        
-print(string_len(palabra))
+
